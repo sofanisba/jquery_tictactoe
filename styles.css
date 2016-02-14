@@ -1,0 +1,23 @@
+
+.wrapper{
+  display:inline-block;
+  overflow:auto;
+  border-radius: 20px;
+  background-color:rgb(11, 166, 254);
+}
+
+table{
+  align-items: center;
+}
+td{
+  background-color: white;
+  border-radius: 20%;
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  color: rgb(79, 102, 120);
+  font-size: 100px;
+  font-family: Rockwell, 'Courier Bold', Courier, Georgia, serif;
+  cursor: crosshair;
+}
