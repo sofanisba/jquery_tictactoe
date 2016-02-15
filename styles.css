@@ -1,9 +1,37 @@
-
-.wrapper{
+body{
+  font-family: Rockwell, 'Courier Bold', Courier, Georgia, serif;
+  text-align: center;
+  font-size: 50px;
+}
+header{
+  display:inline-block;
+  border: 10px solid rgb(11, 166, 254);
+  border-radius: 20px;
+  padding: 5px;
+  width:400px;
+  color: rgb(79, 102, 120);
+  box-shadow:15px 11px 0px 0px rgba(11, 50, 83, 0.41);
+}
+div.wrapper{
   display:inline-block;
   overflow:auto;
   border-radius: 20px;
   background-color:rgb(11, 166, 254);
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 10px;
+  position: relative;
+  box-shadow:15px 11px 0px 0px rgba(11, 50, 83, 0.41);
+
+}
+div.winners{
+  display:block;
+  border-radius:20px;
+  background-color: rgba(11, 50, 83, 0.41);
+  margin: auto;
+  overflow:auto;
+  width: 400px;
+  font-size: 20px;
 }
 
 table{
@@ -12,7 +40,7 @@ table{
 td{
   background-color: white;
   border-radius: 20%;
-  padding: 10px;
+  padding: 5px;
   width: 150px;
   height: 150px;
   text-align: center;
