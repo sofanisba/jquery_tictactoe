@@ -10,7 +10,7 @@ $(document).ready(function(){
       self.html('X').addClass('x');
     }
 
-    self.off('click');
+    self.attr('disabled', 'disabled')
     checkWinner();
 
     turn ++;
@@ -43,32 +43,37 @@ $(document).ready(function(){
       }
     }
     function xWins(){
-      xcount = 0
       winX = window.confirm('X Won?')
       if (winX == true){
-        xcount++
-        $('.winners').html(xcount)
+        $('table').attr('disabled','disabled')
+        $('#x').append('I')
       }
     }
     function oWins() {
-     ocount = 0
-     winO = window.confirm('X Won?')
+     winO = window.confirm('O Won?')
      if (winO == true) {
-       ocount++
-       $('.winners').html(ocount)
+       $('table').attr('disabled','disabled')
+       $('#o').append('I')
      }
    }
 
   }
+  playAgain();
 
   function playAgain(){
     $('.playAgain').click(function(){
+      for (i = 0; i < $('td').length; i++){
+        $($('td')[i]).removeAttr('disabled')
+        $('table').removeAttr('disabled')
+      }
       $('td').empty('.o')
       $('td').empty('.x')
+      $('td').removeClass('o x')
+
+
     });
   // all td remove class o x
   //make clickable
-
   }
 
 });
