@@ -1,7 +1,7 @@
 $(document).ready(function(){
   var turn = 0;
 
-  $('td').click(function(){
+  $('td').on('click', function(){
     var self  = $(this);
 
     if (turn % 2){
@@ -10,7 +10,7 @@ $(document).ready(function(){
       self.html('X').addClass('x');
     }
 
-    self.attr('disabled', 'disabled')
+    self.attr('disabled')
     checkWinner();
 
     turn ++;
@@ -75,5 +75,6 @@ $(document).ready(function(){
   // all td remove class o x
   //make clickable
   }
+
 
 });
